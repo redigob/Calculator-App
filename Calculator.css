@@ -1,0 +1,145 @@
+
+
+.calculator{
+    margin: 100px auto;
+    width: 300px;
+    padding: 30px;
+    display: grid;
+    gap: 10px 20px  ;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(199, 189, 189);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.calculator button{
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #eaeaea68;
+    box-shadow: inset -4px -4px 8px #f2f2f2,
+                inset 6px 6px 10px #e7e6e6,
+                4px 4px 10px #e6e5e5,
+                -4px -4px 10px rgb(255, 255, 255);
+}
+
+.calculator button:active{
+    box-shadow: inset -4px -4px 8px #e7e6e6,
+                inset 6px 6px 10px #f2f2f2,
+                4px 4px 10px #fcfbfb,
+                -4px -4px 10px #ffffff;
+}
+
+
+#outPutScreen{
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background-color: #e8f3f8;
+    grid-column:span 4;
+    text-align: end;
+    padding: 10px 30px 10px 10px;
+    font-size: 20px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 3px 10px #0000002d,
+               inset -2px -5px 10px #f7f6f6;
+}
+
+.calculator .calculate{
+    grid-column: span 2;
+    background-color: #d9a9b1;
+    border-radius: 60px;
+    box-shadow: inset -4px -4px 8px #d9a9b1,
+                inset 6px 6px 10px #d9a9b1,
+                0px 0px 10px #5c5b5b68;
+}
+
+.calculator .calculate:active{
+    box-shadow: inset -4px -4px 8px #d9a9b1,
+                inset 6px 6px 10px #d9a9b1,
+                0px 0px 0px #5c5b5b68;
+}
+
+@media (max-width:600px) {
+    .calculator{
+        width: 250px;
+    }
+
+    
+    .calculator button{
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+        box-shadow: inset -4px -4px 5px #fcfcfc,
+                inset 6px 6px 5px #f0efef,
+                2px 3px 10px #e6e5e5,
+                -4px -4px 10px #ffffff;
+    }
+
+    .calculator .calculate{
+        width: 120px;
+    }
+
+    #outPutScreen{
+        height: 40px;
+    }
+
+}
+
+@media (max-width:380px) {
+    .calculator{
+        width: 200px;
+        gap: 10px;
+    }
+
+    
+    .calculator button{
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+        box-shadow: inset -4px -4px 5px #fcfcfc,
+                inset 6px 6px 5px #f0efef,
+                2px 3px 10px #e6e5e5,
+                -4px -4px 10px #ffffff;
+    }
+
+    #outPutScreen{
+        font-size: 15px;
+    }
+
+    .calculator .calculate{
+        width: 90px;
+    }
+
+    #outPutScreen{
+        height: 30px;
+    }
+
+}
+
+@media (max-width:290px) {
+    .calculator{
+        width: 150px;
+        gap: 10px;
+    }
+
+    
+    .calculator button{
+        height: 25px;
+        width: 25px;
+        font-size: 12px;
+    }
+
+    .calculator .calculate{
+        width: 70px;
+    }
+
+    #outPutScreen{
+        height: 20px;
+    }
+
+    
+}
