@@ -1,14 +1,22 @@
+*{
+    scrollbar-width: none;
+}
 
+body{
+    height: 100vh;
+    background: linear-gradient(150deg,#e9b0b9,#46055b);
+}
 
 .calculator{
-    margin: 100px auto;
+    margin: 80px auto 0px;
     width: 300px;
     padding: 30px;
     display: grid;
     gap: 10px 20px  ;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(199, 189, 189);
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #474a46;
     grid-template-columns: repeat(4,1fr);
 }
 
@@ -27,7 +35,7 @@
 }
 
 .calculator button:active{
-    box-shadow: inset -4px -4px 8px #e7e6e6,
+    box-shadow: inset -4px -4px 8px #f2f2f2,
                 inset 6px 6px 10px #f2f2f2,
                 4px 4px 10px #fcfbfb,
                 -4px -4px 10px #ffffff;
@@ -35,9 +43,11 @@
 
 
 #outPutScreen{
+    pointer-events: none;
+
     border-radius: 50px;
     margin-bottom: 20px;
-    background-color: #e8f3f8;
+    background-color: #f4fbff;
     grid-column:span 4;
     text-align: end;
     padding: 10px 30px 10px 10px;
@@ -45,7 +55,7 @@
     height: 50px;
     border: none;
     box-shadow: 0px 3px 10px #0000002d,
-               inset -2px -5px 10px #f7f6f6;
+               inset -2px -5px 10px #ededed;
 }
 
 .calculator .calculate{
@@ -93,6 +103,8 @@
     .calculator{
         width: 200px;
         gap: 10px;
+        padding: 20px;
+
     }
 
     
@@ -130,7 +142,7 @@
     .calculator button{
         height: 25px;
         width: 25px;
-        font-size: 12px;
+        font-size: 7px;
     }
 
     .calculator .calculate{
